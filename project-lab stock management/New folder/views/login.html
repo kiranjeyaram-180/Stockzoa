@@ -1,0 +1,80 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/materialize.css">
+<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+<style>
+.one{
+	margin-top:110px;
+	margin-bottom:40px;
+}
+/*.two{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}*/
+</style>
+</head>
+
+<body>
+<img class="responsive-img" src="clg.jpg" width="100%">
+<form method="POST">
+  <div class="row one">
+  <div class="col s9 push-s3">
+  <div class="row">
+  
+      <div class="col s7">
+			<div class="card transparent">
+      <div class="card-content black-text">
+
+  		<div class="row">
+ 			<div class="input-field col s11" ng-model="loginInfo.username">
+			<label for="first_name">User Name:</label>
+ 			<input id="first_name" type="text" class="validate">
+ 			</div>
+ 			</div>
+ 			
+ 			<div class="row" ng-model="loginInfo.password">
+ 			<div class="input-field col s11">
+			<label for="password">Password:</label>
+ 			<input id="password" type="password" class="validate">
+ 			</div>
+ 			</div>
+
+			<div class="row" ng-click="loginuser()">
+			<div class="col s7 push-s4">
+			<button class="btn waves-effect waves-ripple" type="submit" name="action">sign in</button>
+
+			</div>
+			</div>
+			</div>
+	</div>
+
+	</div>
+  </div>
+  </div>
+	</form>
+	<?php 
+		echo $message ; 
+	?>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+</body>
+</html>  
+
+
+
+<div>
+
+<h2>Login</h2>
+        
+    <input type="text"  ng-model="loginInfo.username" placeholder="username" />
+    <input type="password" ng-model="loginInfo.password" placeholder="password" />
+    <button ng-click="loginuser()">login</button>
+
+
+</div>
+
+  
+    
